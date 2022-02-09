@@ -1465,6 +1465,7 @@ pagelist
 Parallelise
 paramref
 PARAVIRTUAL
+parentpath
 partnertopic
 Passthrough
 passwd
@@ -2020,6 +2021,8 @@ subtasksinfo
 subteam
 subtree
 subtrees
+subvolume
+subvolumes
 subwoofer
 subword
 subwords
