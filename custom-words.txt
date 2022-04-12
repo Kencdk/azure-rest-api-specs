@@ -2522,3 +2522,4 @@ Quickbase
 Smartsheet
 Qualys
 servermetrics
+getazresiliencystatus
