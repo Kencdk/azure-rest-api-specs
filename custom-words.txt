@@ -2535,6 +2535,8 @@ businessmetadata
 Qualys
 operatorconnect
 servermetrics
+usermetadata
+Relaytype
 Deboards
 Deregisters
 Dataworld
