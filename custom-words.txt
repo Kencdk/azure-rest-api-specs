@@ -620,6 +620,7 @@ diskoperations
 Distcp
 Distro
 dllpath
+DMARC
 DMSDB
 DMTS
 Dnat
