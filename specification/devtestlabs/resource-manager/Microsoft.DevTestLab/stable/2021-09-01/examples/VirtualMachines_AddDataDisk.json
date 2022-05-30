@@ -5,6 +5,8 @@
     "resourceGroupName": "resourceGroupName",
     "labName": "{labName}",
     "name": "{virtualMachineName}",
+    "diskName": "{diskName}",
+    "diskType": "{diskType}",
     "dataDiskProperties": {
       "attachNewDataDiskOptions": {
         "diskSizeGiB": 127,

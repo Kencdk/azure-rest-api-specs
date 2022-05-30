@@ -5,7 +5,10 @@
     "resourceGroupName": "resourceGroupName",
     "labName": "{labName}",
     "name": "{vmName}",
-    "virtualMachine": {
+    "virtualNetworkName": "{virtualNetworkName}",
+    "username":"{username}",
+    "password":"{password}",
+    "labVirtualMachine": {
       "properties": {
         "size": "Standard_A2_v2",
         "userName": "{userName}",
@@ -16,7 +19,7 @@
         "galleryImageReference": {
           "offer": "UbuntuServer",
           "publisher": "Canonical",
-          "sku": "16.04-LTS",
+          "sku": "18.04-LTS",
           "osType": "Linux",
           "version": "Latest"
         },
@@ -111,7 +114,6 @@
           "tagName1": "tagValue1"
         }
       }
-    },
-    "202": {}
+    }
   }
 }

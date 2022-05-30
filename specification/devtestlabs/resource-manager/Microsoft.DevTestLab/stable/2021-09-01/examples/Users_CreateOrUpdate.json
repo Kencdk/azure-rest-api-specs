@@ -6,10 +6,6 @@
     "labName": "{devtestlabName}",
     "name": "{userName}",
     "user": {
-      "location": "{location}",
-      "tags": {
-        "tagName1": "tagValue1"
-      },
       "properties": {
         "identity": {
           "principalName": "{principalName}",
@@ -17,10 +13,6 @@
           "tenantId": "{tenantId}",
           "objectId": "{objectId}",
           "appId": "{appId}"
-        },
-        "secretStore": {
-          "keyVaultUri": "{keyVaultUri}",
-          "keyVaultId": "{keyVaultId}"
         }
       }
     }
@@ -46,11 +38,7 @@
         },
         "id": "/subscriptions/{subscriptionId}/resourceGroups/resourceGroupName/providers/Microsoft.DevTestLab/labs/{labName}/users/{userName}",
         "name": "{userName}",
-        "type": "Microsoft.DevTestLab/labs/users",
-        "location": "{location}",
-        "tags": {
-          "tagName1": "tagValue1"
-        }
+        "type": "Microsoft.DevTestLab/labs/users"
       }
     },
     "201": {
@@ -73,13 +61,8 @@
         },
         "id": "/subscriptions/{subscriptionId}/resourceGroups/resourceGroupName/providers/Microsoft.DevTestLab/labs/{labName}/users/{userName}",
         "name": "{userName}",
-        "type": "Microsoft.DevTestLab/labs/users",
-        "location": "{location}",
-        "tags": {
-          "tagName1": "tagValue1"
-        }
+        "type": "Microsoft.DevTestLab/labs/users"
       }
-    },
-    "202": {}
+    }
   }
 }

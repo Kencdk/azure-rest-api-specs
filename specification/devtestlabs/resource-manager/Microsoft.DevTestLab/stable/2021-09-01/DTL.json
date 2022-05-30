@@ -1233,9 +1233,6 @@
               "$ref": "#/definitions/CustomImage"
             }
           },
-          "202": {
-            "description": "Accepted"
-          },
           "default": {
             "description": "BadRequest",
             "schema": {
@@ -1535,9 +1532,6 @@
             "schema": {
               "$ref": "#/definitions/Formula"
             }
-          },
-          "202": {
-            "description": "Accepted"
           },
           "default": {
             "description": "BadRequest",
@@ -3117,20 +3111,11 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/LabSecret"
-            }
-          },
           "201": {
             "description": "Created",
             "schema": {
               "$ref": "#/definitions/LabSecret"
             }
-          },
-          "202": {
-            "description": "Accepted"
           },
           "default": {
             "description": "BadRequest",
@@ -3235,7 +3220,7 @@
           }
         ],
         "responses": {
-          "200": {
+          "201": {
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/LabSecret"
@@ -3418,9 +3403,6 @@
             "schema": {
               "$ref": "#/definitions/ServiceRunner"
             }
-          },
-          "202": {
-            "description": "Accepted"
           },
           "default": {
             "description": "BadRequest",
@@ -4248,7 +4230,7 @@
             "name": "user",
             "in": "body",
             "description": "Profile of a lab user.",
-            "required": true,
+            "required": false,
             "schema": {
               "$ref": "#/definitions/User"
             }
@@ -4269,9 +4251,6 @@
             "schema": {
               "$ref": "#/definitions/User"
             }
-          },
-          "202": {
-            "description": "Accepted"
           },
           "default": {
             "description": "BadRequest",
@@ -4582,9 +4561,6 @@
             "schema": {
               "$ref": "#/definitions/Disk"
             }
-          },
-          "202": {
-            "description": "Accepted"
           },
           "default": {
             "description": "BadRequest",
@@ -5026,9 +5002,6 @@
               "$ref": "#/definitions/DtlEnvironment"
             }
           },
-          "202": {
-            "description": "Accepted"
-          },
           "default": {
             "description": "BadRequest",
             "schema": {
@@ -5344,9 +5317,6 @@
               "$ref": "#/definitions/Secret"
             }
           },
-          "202": {
-            "description": "Accepted"
-          },
           "default": {
             "description": "BadRequest",
             "schema": {
@@ -5657,9 +5627,6 @@
             "schema": {
               "$ref": "#/definitions/ServiceFabric"
             }
-          },
-          "202": {
-            "description": "Accepted"
           },
           "default": {
             "description": "BadRequest",
@@ -6509,9 +6476,6 @@
             "schema": {
               "$ref": "#/definitions/LabVirtualMachine"
             }
-          },
-          "202": {
-            "description": "Accepted"
           },
           "default": {
             "description": "BadRequest",
@@ -7921,9 +7885,6 @@
               "$ref": "#/definitions/VirtualNetwork"
             }
           },
-          "202": {
-            "description": "Accepted"
-          },
           "default": {
             "description": "BadRequest",
             "schema": {
@@ -8221,9 +8182,6 @@
               "$ref": "#/definitions/BastionHost"
             }
           },
-          "202": {
-            "description": "Accepted"
-          },
           "default": {
             "description": "BadRequest",
             "schema": {
@@ -8452,9 +8410,6 @@
             "schema": {
               "$ref": "#/definitions/Lab"
             }
-          },
-          "202": {
-            "description": "Accepted"
           },
           "default": {
             "description": "BadRequest",
@@ -9433,8 +9388,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/ArmTemplate"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -9600,8 +9554,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Artifact"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -9678,7 +9631,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -9713,8 +9666,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/ArtifactSource"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -9839,7 +9791,7 @@
       ],
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -9874,8 +9826,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/BastionHost"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -10119,7 +10070,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -10154,8 +10105,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/CustomImage"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -10402,7 +10352,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -10437,8 +10387,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Disk"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -10518,7 +10467,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -10553,8 +10502,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/DtlEnvironment"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -10739,7 +10687,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -10774,8 +10722,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Formula"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -10871,8 +10818,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/GalleryImage"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -11104,13 +11050,10 @@
     },
     "Lab": {
       "description": "A lab.",
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -11178,9 +11121,6 @@
     },
     "LabCost": {
       "description": "A cost item.",
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "allOf": [
         {
@@ -11238,8 +11178,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/LabCost"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -11339,8 +11278,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Lab"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -11364,7 +11302,8 @@
         },
         "artifactsStorageAccount": {
           "description": "The lab's artifact storage account.",
-          "type": "string"
+          "type": "string",
+          "readOnly": true
         },
         "premiumDataDiskStorageAccount": {
           "description": "The lab's premium data disk storage account.",
@@ -11446,7 +11385,8 @@
         },
         "vmCreationResourceGroup": {
           "description": "The resource group ID in which all new lab virtual machines will be created. Ex: /subscriptions/subId/resourceGroups/rgName To let DevTest Labs manage resource group creation, set this value to null.",
-          "type": "string"
+          "type": "string",
+          "readOnly": true
         },
         "publicIpId": {
           "description": "The public IP address for the lab's load balancer.",
@@ -11577,7 +11517,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -11612,8 +11552,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/LabSecret"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -11637,6 +11576,9 @@
         "keyVaultEntry": {
           "description": "The name of the entry in the lab KeyVault.",
           "type": "string",
+          "x-ms-mutability": [
+            "read"
+          ],
           "readOnly": true
         },
         "enabledForArtifacts": {
@@ -11704,8 +11646,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/LabVhd"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -11715,13 +11656,10 @@
     },
     "LabVirtualMachine": {
       "description": "A virtual machine.",
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -11739,9 +11677,6 @@
     },
     "LabVirtualMachineCreationParameter": {
       "description": "Properties for creating a virtual machine.",
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "properties": {
         "properties": {
@@ -12021,8 +11956,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/LabVirtualMachine"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -12325,13 +12259,10 @@
     },
     "NotificationChannel": {
       "description": "A notification.",
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -12366,8 +12297,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/NotificationChannel"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -12660,13 +12590,10 @@
     },
     "Policy": {
       "description": "A Policy.",
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -12701,8 +12628,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Policy"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -12803,9 +12729,6 @@
           "$ref": "types.json#/definitions/systemData"
         }
       },
-      "required": [
-        "properties"
-      ],
       "allOf": [
         {
           "$ref": "types.json#/definitions/Resource"
@@ -12955,12 +12878,9 @@
     "Schedule": {
       "type": "object",
       "description": "A schedule.",
-      "required": [
-        "properties"
-      ],
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -12977,9 +12897,6 @@
       }
     },
     "ScheduleCreationParameter": {
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "description": "Properties for creating a schedule.",
       "properties": {
@@ -12994,7 +12911,8 @@
         },
         "location": {
           "description": "The location of the new virtual machine or environment",
-          "type": "string"
+          "type": "string",
+          "readOnly": true
         },
         "tags": {
           "description": "The tags of the resource.",
@@ -13091,8 +13009,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Schedule"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -13169,13 +13086,10 @@
     },
     "Secret": {
       "description": "A secret.",
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -13210,8 +13124,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Secret"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -13241,13 +13154,10 @@
     },
     "ServiceFabric": {
       "description": "A Service Fabric.",
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -13282,8 +13192,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/ServiceFabric"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -13323,13 +13232,10 @@
     },
     "ServiceRunner": {
       "description": "A container for a managed identity to execute DevTest lab services.",
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ],
       "properties": {
@@ -13359,8 +13265,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/ServiceRunner"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -13403,12 +13308,9 @@
           "$ref": "types.json#/definitions/systemData"
         }
       },
-      "required": [
-        "properties"
-      ],
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ]
     },
@@ -13431,8 +13333,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/SharedGallery"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -13487,12 +13388,9 @@
           "$ref": "types.json#/definitions/systemData"
         }
       },
-      "required": [
-        "properties"
-      ],
       "allOf": [
         {
-          "$ref": "types.json#/definitions/TrackedResource"
+          "$ref": "types.json#/definitions/Resource"
         }
       ]
     },
@@ -13515,8 +13413,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/SharedImage"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -13765,9 +13662,6 @@
     },
     "User": {
       "description": "Profile of a lab user.",
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "allOf": [
         {
@@ -13832,8 +13726,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/User"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",
@@ -13889,9 +13782,6 @@
     },
     "VirtualNetwork": {
       "description": "A virtual network.",
-      "required": [
-        "properties"
-      ],
       "type": "object",
       "allOf": [
         {
@@ -13930,8 +13820,7 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/VirtualNetwork"
-          },
-          "readOnly": true
+          }
         },
         "nextLink": {
           "description": "URL to get the next set of operation list results if there are any",

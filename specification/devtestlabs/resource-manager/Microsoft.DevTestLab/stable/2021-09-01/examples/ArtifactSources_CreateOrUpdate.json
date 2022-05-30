@@ -9,12 +9,12 @@
       "properties": {
         "displayName": "{displayName}",
         "uri": "{artifactSourceUri}",
-        "sourceType": "{VsoGit|GitHub|StorageAccount}",
+        "sourceType": "{sourceType}",
         "folderPath": "{folderPath}",
         "armTemplateFolderPath": "{armTemplateFolderPath}",
         "branchRef": "{branchRef}",
         "securityToken": "{securityToken}",
-        "status": "{Enabled|Disabled}"
+        "status": "{status}"
       },
       "location": "{location}",
       "tags": {
