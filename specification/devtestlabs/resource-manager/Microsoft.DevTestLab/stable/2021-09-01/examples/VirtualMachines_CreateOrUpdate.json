@@ -5,6 +5,9 @@
     "resourceGroupName": "resourceGroupName",
     "labName": "{labName}",
     "name": "{vmName}",
+    "virtualNetworkName": "{virtualNetworkName}",
+    "username":"{username}",
+    "password":"{password}",
     "labVirtualMachine": {
       "properties": {
         "size": "Standard_A2_v2",
@@ -16,7 +19,7 @@
         "galleryImageReference": {
           "offer": "UbuntuServer",
           "publisher": "Canonical",
-          "sku": "16.04-LTS",
+          "sku": "18.04-LTS",
           "osType": "Linux",
           "version": "Latest"
         },

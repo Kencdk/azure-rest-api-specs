@@ -11576,6 +11576,9 @@
         "keyVaultEntry": {
           "description": "The name of the entry in the lab KeyVault.",
           "type": "string",
+          "x-ms-mutability": [
+            "read"
+          ],
           "readOnly": true
         },
         "enabledForArtifacts": {

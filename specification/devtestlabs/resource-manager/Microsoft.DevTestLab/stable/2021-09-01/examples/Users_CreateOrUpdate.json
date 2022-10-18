@@ -13,10 +13,6 @@
           "tenantId": "{tenantId}",
           "objectId": "{objectId}",
           "appId": "{appId}"
-        },
-        "secretStore": {
-          "keyVaultUri": "{keyVaultUri}",
-          "keyVaultId": "{keyVaultId}"
         }
       }
     }
