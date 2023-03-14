@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "api-version": "2021-09-01",
+    "subscriptionId": "{subscriptionId}",
+    "resourceGroupName": "resourceGroupName",
+    "labName": "{labName}",
+    "name": "{virtualMachineName}",
+    "diskName": "{diskName}",
+    "diskType": "{diskType}",
+    "dataDiskProperties": {
+      "attachNewDataDiskOptions": {
+        "diskSizeGiB": 127,
+        "diskName": "{diskName}",
+        "diskType": "{diskType}"
+      }
+    },
+    "hostCaching": "none|readOnly|readWrite"
+  },
+  "responses": {
+    "200": {},
+    "202": {}
+  }
+}

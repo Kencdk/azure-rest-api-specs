@@ -1,0 +1,68 @@
+{
+  "parameters": {
+    "api-version": "2021-09-01",
+    "subscriptionId": "{subscriptionId}",
+    "resourceGroupName": "resourceGroupName",
+    "labName": "{devtestlabName}",
+    "name": "{userName}",
+    "user": {
+      "properties": {
+        "identity": {
+          "principalName": "{principalName}",
+          "principalId": "{principalId}",
+          "tenantId": "{tenantId}",
+          "objectId": "{objectId}",
+          "appId": "{appId}"
+        }
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "identity": {
+            "principalName": "{principalName}",
+            "principalId": "{principalId}",
+            "tenantId": "{tenantId}",
+            "objectId": "{objectId}",
+            "appId": "{appId}"
+          },
+          "secretStore": {
+            "keyVaultUri": "{keyVaultUri}",
+            "keyVaultId": "{keyVaultId}"
+          },
+          "createdDate": "2018-10-01T18:40:48.1739018-07:00",
+          "provisioningState": "Succeeded",
+          "uniqueIdentifier": "{uniqueIdentifier}"
+        },
+        "id": "/subscriptions/{subscriptionId}/resourceGroups/resourceGroupName/providers/Microsoft.DevTestLab/labs/{labName}/users/{userName}",
+        "name": "{userName}",
+        "type": "Microsoft.DevTestLab/labs/users"
+      }
+    },
+    "201": {
+      "body": {
+        "properties": {
+          "identity": {
+            "principalName": "{principalName}",
+            "principalId": "{principalId}",
+            "tenantId": "{tenantId}",
+            "objectId": "{objectId}",
+            "appId": "{appId}"
+          },
+          "secretStore": {
+            "keyVaultUri": "{keyVaultUri}",
+            "keyVaultId": "{keyVaultId}"
+          },
+          "createdDate": "2018-10-01T18:40:48.1739018-07:00",
+          "provisioningState": "Succeeded",
+          "uniqueIdentifier": "{uniqueIdentifier}"
+        },
+        "id": "/subscriptions/{subscriptionId}/resourceGroups/resourceGroupName/providers/Microsoft.DevTestLab/labs/{labName}/users/{userName}",
+        "name": "{userName}",
+        "type": "Microsoft.DevTestLab/labs/users"
+      }
+    }
+  }
+}
