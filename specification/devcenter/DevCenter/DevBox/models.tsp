@@ -52,6 +52,9 @@ union DevBoxProvisioningState {
   @doc("Dev Box is stopping.") Stopping: "Stopping",
   @doc("Dev Box is provisioning.") Provisioning: "Provisioning",
 
+  @added(APIVersions.v2025_04_01_preview)
+  @doc("Dev Box is pending approval.") PendingApproval: "PendingApproval",
+
   @doc("Dev Box was provisioned with warning.")
   ProvisionedWithWarning: "ProvisionedWithWarning",
 

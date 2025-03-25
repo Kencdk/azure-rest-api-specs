@@ -16,6 +16,7 @@ namespace SdkCustomizations;
 interface DevCenterClientOperations {
   listProjects is DevCenterService.DevCenter.listProjects;
   getProject is DevCenterService.DevCenter.getProject;
+  listApprovals is DevCenterService.Projects.listApprovals;
 }
 
 #suppress "@azure-tools/typespec-azure-core/use-standard-operations" "detailed suppress description for each operation can be found in routes.tsp"

@@ -163,6 +163,17 @@ interface DevBoxes {
   >;
 
   #suppress "@azure-tools/typespec-azure-core/use-standard-operations" "Replacing Status Monitor"
+  @doc("Approves the creation of a Dev Box.")
+  @pollingOperation(OperationStatuses.get)
+  @action("approve")
+  @added(APIVersions.v2025_04_01_preview)
+  approveDevBox is DevCenterOps.LongRunningResourceAction<
+    DevBox,
+    {},
+    OperationStatus
+  >;
+
+  #suppress "@azure-tools/typespec-azure-core/use-standard-operations" "Replacing Status Monitor"
   @doc("Starts a Dev Box.")
   @pollingOperation(OperationStatuses.get)
   @action("start")

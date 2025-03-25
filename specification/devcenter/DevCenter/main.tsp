@@ -4,6 +4,7 @@ import "@azure-tools/typespec-azure-core";
 import "./DevBox/routes.tsp";
 import "./DevCenter/routes.tsp";
 import "./Environments/routes.tsp";
+import "./Projects/routes.tsp";
 
 using Azure.Core;
 using TypeSpec.Versioning;
@@ -65,4 +66,8 @@ enum APIVersions {
   @doc("The 2025-03-01-preview service API version")
   @useDependency(Versions.v1_0_Preview_2)
   v2025_03_01_preview: "2025-03-01-preview",
+
+  @doc("The 2025-04-01-preview service API version")
+  @useDependency(Versions.v1_0_Preview_2)
+  v2025_04_01_preview: "2025-04-01-preview",
 }

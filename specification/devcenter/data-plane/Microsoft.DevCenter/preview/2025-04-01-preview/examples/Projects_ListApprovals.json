@@ -1,0 +1,44 @@
+{
+    "title": "Lists Dev Boxes in the project, which are pending approval.",
+    "operationId": "Projects_ListApprovals",
+    "parameters": {
+      "endpoint": "https://8a40af38-3b4c-4672-a6a4-5e964b1870ed-contosodevcenter.centralus.devcenter.azure.com",
+      "api-version": "2025-04-01-preview"
+    },
+    "responses": {
+      "200": {
+        "body": {
+          "value": [
+            {
+              "uri": "https://8a40af38-3b4c-4672-a6a4-5e964b1870ed-contosodevcenter.centralus.devcenter.azure.com/projects/myProject/users/b08e39b4-2ac6-4465-a35e-48322efb0f98/devboxes/MyDevBox",
+              "name": "MyDevBox",
+              "provisioningState": "PendingApproval",
+              "projectName": "ContosoProject",
+              "poolName": "LargeDevWorkStationPool",
+              "location": "centralus",
+              "osType": "Windows",
+              "user": "b08e39b4-2ac6-4465-a35e-48322efb0f98",
+              "createdByObjectId": "63be90d8-d38c-45cb-93a6-a770235c194c",
+              "lastConnectedTime": null,
+              "hardwareProfile": {
+                "vCPUs": 8,
+                "memoryGB": 32
+              },
+              "storageProfile": {
+                "osDisk": {
+                  "diskSizeGB": 1024
+                }
+              },
+              "hibernateSupport": "Enabled",
+              "imageReference": {
+                "name": "DevImage",
+                "version": "1.0.0",
+                "publishedDate": "2022-03-01T00:13:23.323Z"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  
